@@ -9,11 +9,13 @@
 - **Разделение ответственности** handelrs, services, storage
 
 # Структура проекта
-internal/
-├──handlers/ #http обработчики
-├──models/ # структуры данных
-├──services/ # бизнес-логика
-├──storage/ # хранение данных
+- `/cmd/api/main.go` - точка входа
+- `/internal/handlers` - HTTP обработчики
+- `/internal/models` - структуры данных  
+- `/internal/services` - бизнес-логика
+- `/internal/storage` - хранилище данных
+- `go.mod` - зависимости
+- `README.md` - документация
 
 ## Api Endpoints
 
